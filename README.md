@@ -51,7 +51,7 @@ Review Skill（质量检查）
 Git Skill（提交与版本记录）
 ```
 
-🌍 全局规则（Global Skill）
+## 🌍 全局规则（Global Skill）
 
 所有 Skill 执行必须遵守：
 
@@ -61,25 +61,25 @@ Git Skill（提交与版本记录）
 不允许跳过开发流程步骤
 复杂任务必须拆解执行
 
-🧩 Skill 设计原则
+## 🧩 Skill 设计原则
 
 本系统遵循以下设计原则：
 
-1. 单一职责原则
+### 1. 单一职责原则
 
 每个 Skill 只负责一个阶段任务。
 
-2. 流程强约束
+### 2. 流程强约束
 
 必须遵循：
 
 PRD → Design → Code → Review → Git
 
-3. Router 驱动执行
+### 3. Router 驱动执行
 
 Router Skill 决定当前任务应进入哪个阶段。
 
-4. 可扩展性
+### 4. 可扩展性
 
 支持新增 Skill：
 
@@ -87,32 +87,40 @@ feature skill
 model experiment skill
 MCP integration skill
 
-⚙️ 使用方式（本地）
-1. 克隆仓库
+## ⚙️ 使用方式（本地）
+### 1. 克隆仓库
+~~~bash
 git clone https://github.com/chunriji/alin_skill.git
+~~~
 
-2. 更新 Skill（手动）
+
+### 2. 更新 Skill（手动）
+~~~bash
 cd .github/skills
 git pull
+~~~
 
 或使用一键同步脚本：
+~~~bash
 .\sync-skills.ps1
+~~~
 
-🧪 适用场景
+
+## 🧪 适用场景
 算法设计与实现
 多步骤工程任务拆解
 LLM Agent 工作流控制
 PRD → Code 自动化流程设计
 GitHub 驱动开发管理
 
-🚀 未来扩展方向
+## 🚀 未来扩展方向
 MCP（Model Context Protocol）集成
 自动 Skill Router（无需手动阶段控制）
 Codex 自动执行完整工程流程
 Skill runtime 热更新机制
 多仓库 Skill Registry 管理
 
-⚠️ 注意事项
+## ⚠️ 注意事项
 Skill 修改后必须 git commit + push
 本地必须 git pull 才能生效
 Codex 不会自动同步 GitHub 更新
