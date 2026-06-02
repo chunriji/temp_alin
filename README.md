@@ -55,11 +55,11 @@ Git Skill（提交与版本记录）
 
 所有 Skill 执行必须遵守：
 
--输出语言：中文
--用户称呼：春日
--输出结构必须清晰分层
--不允许跳过开发流程步骤
--复杂任务必须拆解执行
+- 输出语言：中文
+- 用户称呼：春日
+- 输出结构必须清晰分层
+- 不允许跳过开发流程步骤
+- 复杂任务必须拆解执行
 
 ## 🧩 Skill 设计原则
 
@@ -83,9 +83,9 @@ Router Skill 决定当前任务应进入哪个阶段。
 
 支持新增 Skill：
 
--feature skill
--model experiment skill
--MCP integration skill
+- feature skill
+- model experiment skill
+- MCP integration skill
 
 ## ⚙️ 使用方式（本地）
 ### 1. 克隆仓库
@@ -107,21 +107,21 @@ git pull
 
 
 ## 🧪 适用场景
--算法设计与实现
--多步骤工程任务拆解
--LLM Agent 工作流控制
--PRD → Code 自动化流程设计
--GitHub 驱动开发管理
+- 算法设计与实现
+- 多步骤工程任务拆解
+- LLM Agent 工作流控制
+- PRD → Code 自动化流程设计
+- GitHub 驱动开发管理
 
 ## 🚀 未来扩展方向
--MCP（Model Context Protocol）集成
--自动 Skill Router（无需手动阶段控制）
--Codex 自动执行完整工程流程
--Skill runtime 热更新机制
--多仓库 Skill Registry 管理
+- MCP（Model Context Protocol）集成
+- 自动 Skill Router（无需手动阶段控制）
+- Codex 自动执行完整工程流程
+- Skill runtime 热更新机制
+- 多仓库 Skill Registry 管理
 
 ## ⚠️ 注意事项
--Skill 修改后必须 git commit + push
--本地必须 git pull 才能生效
--Codex 不会自动同步 GitHub 更新
--Router 决定流程，Global 决定风格
+- Skill 修改后必须 git commit + push
+- 本地必须 git pull 才能生效
+- Codex 不会自动同步 GitHub 更新
+- Router 决定流程，Global 决定风格
